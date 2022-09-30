@@ -1,0 +1,163 @@
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --dark-blue: hsl(234, 12%, 34%);
+    --gray: hsl(229, 6%, 66%);
+    --white: hsl(0, 0%, 98%);
+}
+
+/* typography */
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.head-one {
+    font-weight: 200;
+}
+
+.head-two, article h2 {
+    font-weight: 600;
+}
+
+article p , header p {
+    font-weight: 400;
+}
+
+/* layout */
+
+body {
+    background-color: var(--white);
+}
+
+main {
+    width: 85%;
+    max-width: 500px;
+    margin: 5rem auto;
+}
+
+p {
+    color: var(--gray);
+}
+
+
+.head-one {
+    margin-bottom: 0;
+    color: var(--gray);
+}
+
+.head-two {
+    margin-top: 0;
+    color: var(--dark-blue);
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+div {
+    display: grid;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 1);
+    margin-bottom: 1.5rem;
+    border-radius: 0.6rem;
+    padding: 0.4rem 1.5rem;
+}
+
+article h2 {
+    margin-bottom: 0.3rem;
+    color: var(--dark-blue);
+}
+
+article p {
+    margin-top: 0;
+    font-size: 1.1rem;
+}
+
+svg {
+    float: right;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.card-one {
+    border-top: 0.4rem solid var(--cyan);
+    margin-top: 2.3rem;
+}
+
+.card-two {
+    border-top: 0.4rem solid var(--red);
+}
+
+.card-three {
+    border-top: 0.4rem solid var(--orange);
+}
+
+.card-four {
+    border-top: 0.4rem solid var(--blue);
+}
+
+/* media query */
+
+@media (min-width: 1300px) {
+
+    main {
+        width: 100%;
+        margin: 3rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .head-two {
+        margin-bottom: 0.5rem;
+    }
+
+    header p {
+        font-size: 1.05rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+     .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;
+        margin-right: 1.2em;
+        width: 70rem;
+        gap: 1.5rem;
+    }
+
+    .card-one {
+        width: 20rem;
+        margin-top: 0;
+    }
+
+    .card-two {
+        width: 20rem;
+        margin-top: 2rem;
+    }
+
+    .card-three {
+        width: 20rem;
+    }
+
+    .card-four {
+        width: 20rem;
+    } 
+}
+
+
+
+
